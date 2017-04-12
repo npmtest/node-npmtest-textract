@@ -1,1 +1,40 @@
-{     "devDependencies": {         "textract": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-textract",     "homepage": "https://github.com/npmtest/node-npmtest-textract",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-textract.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [textract (v2.1.2)](https://github.com/dbashford/textract) [![npm package](https://img.shields.io/npm/v/npmtest-textract.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-textract) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-textract.svg)](https://travis-ci.org/npmtest/node-npmtest-textract)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "textract": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-textract",
+    "keywords": [
+        "coverage",
+        "test",
+        "textract"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_textract.js",
+    "name": "npmtest-textract",
+    "nameAlias": "npmtest_textract",
+    "nameOriginal": "npmtest-textract",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-textract.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
