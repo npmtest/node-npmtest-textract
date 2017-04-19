@@ -1,6 +1,6 @@
 # npmtest-textract
 
-#### test coverage for  [textract (v2.1.2)](https://github.com/dbashford/textract)  [![npm package](https://img.shields.io/npm/v/npmtest-textract.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-textract) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-textract.svg)](https://travis-ci.org/npmtest/node-npmtest-textract)
+#### basic test coverage for  [textract (v2.1.2)](https://github.com/dbashford/textract)  [![npm package](https://img.shields.io/npm/v/npmtest-textract.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-textract) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-textract.svg)](https://travis-ci.org/npmtest/node-npmtest-textract)
 
 #### Extracting text from files of various type including html, pdf, doc, docx, xls, xlsx, csv, pptx, png, jpg, gif, rtf, text/*, and various open office.
 
